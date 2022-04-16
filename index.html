@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/iconsfont.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>hometask 1</title>
+</head>
+
+<body>
+	<div id="parent">
+		<table class="tableNotes">
+			<thead>
+				<tr>
+					<th></th>
+					<th class="name">Name</th>
+					<th>Created</th>
+					<th>Category</th>
+					<th>Content</th>
+					<th class="dates">Dates</th>
+					<th class="edit"></th>
+					<th class="archive"><span class="_icon-archive"></span></th>
+					<th class="del"><span class="_icon-delete"></span></th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+
+		<div id="create">
+			<button>Create Note</button>
+		</div>
+
+		<div class="writeNote">
+			<input id="name" placeholder="name">
+			<select id="category" placeholder="category">
+				<option value="Task">Task</option>
+				<option value="Random Thought">Random Thought</option>
+				<option value="Idea">Idea</option>
+			</select>
+			<textarea id="content" placeholder="content"></textarea>
+			<div class="inputBut">
+				<input type="button" class="saveBut" value="Save">
+				<input type="button" class="editBut" value="Save">
+				<input type="button" class="cancelBut" value="Cancel">
+			</div>
+
+		</div>
+
+		<div class="tablesArchive">
+			<table class="tableArchive">
+				<thead>
+					<th></th>
+					<th class="tableArchive__noteCategory">Note Category</th>
+					<th class="tableArchive__active">Active</th>
+					<th class="tableArchive__archived">Archived</th>
+				</thead>
+				<tbody></tbody>
+			</table>
+			<div class="listTask  inactive">
+				<p class="close">Close</p>
+				<table class="listArchivedTask">
+					<tbody></tbody>
+				</table>
+			</div>
+
+			<div class="listIdea inactive">
+				<p class="close">Close</p>
+				<table class="listArchivedIdea">
+					<tbody></tbody>
+				</table>
+			</div>
+
+			<div class="listThought inactive">
+				<p class="close">Close</p>
+				<table class="listArchivedThought">
+					<tbody></tbody>
+				</table>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="scripts/script.js" type="module"></script>
+</body>
+
+</html>
