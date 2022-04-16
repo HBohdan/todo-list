@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?ng3luy');
+  src: url('../fonts/icons.eot?ng3luy#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?ng3luy') format('truetype'),
+    url('../fonts/icons.woff?ng3luy') format('woff'),
+    url('../fonts/icons.svg?ng3luy#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-archive:before {
+  content: "\e900";
+}
+
+._icon-delete:before {
+  content: "\e901";
+}
+
+._icon-edit:before {
+  content: "\e902";
+}
+
+._icon-idea:before {
+  content: "\e903";
+}
+
+._icon-random-thought:before {
+  content: "\e904";
+}
+
+._icon-task:before {
+  content: "\e905";
+}
+
+._icon-unarchive:before {
+  content: "\e906";
+}

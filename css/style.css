@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+#parent {
+	margin: 0 auto;
+	width: 540px;
+}
+
+table {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 10px;
+	width: 100%;
+	text-align: left;
+	border-spacing: 0 7px;
+}
+
+thead {
+	background: #999;
+	color: #FFFFFF;
+}
+
+th {
+	width: 15%;
+	padding: 5px 0;
+}
+
+.name {
+	width: 18.7%;
+}
+
+.dates {
+	width: 17.7%;
+}
+
+th:first-child {
+	width: 7.5%;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+th:last-child {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.edit,
+.archive,
+.del,
+.unarchive {
+	width: 3.7%;
+	padding: 0;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 2px;
+	padding-right: 4px;
+}
+
+tbody {
+	background: #E8EAF5;
+}
+
+td {
+	color: #7A7A7A;
+}
+
+td:first-child {
+	padding: 4px 9px;
+}
+
+._icon-task,
+._icon-random-thought,
+._icon-idea {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #616161;
+	color: #FFFFFF;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+}
+
+
+
+#create {
+	margin-top: 3px;
+	display: flex;
+	justify-content: end;
+}
+
+#create button {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 10px;
+	padding: 0 4px;
+}
+
+.writeNote {
+	padding: 10px;
+	width: 250px;
+	background: #E8EAF5;
+	position: absolute;
+	top: 15%;
+	left: 30%;
+	display: none;
+}
+
+#name,
+#category,
+#content {
+	width: 100%;
+	padding: 5px;
+}
+
+#category {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#content {
+	height: 100px;
+}
+
+.inputBut {
+	display: flex;
+	justify-content: space-between;
+}
+
+.editBut {
+	display: none;
+	/* margin: 0 auto; */
+}
+
+.saveBut,
+.cancelBut,
+.editBut {
+	width: 49%;
+	/* margin: 0 auto; */
+}
+
+/*________ archive table ________*/
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
+
+.tablesArchive {
+	padding-top: 30px;
+}
+
+.tableArchive__noteCategory {
+	width: 40%;
+}
+
+.tableArchive__active {
+	width: 19%;
+}
+
+.tableArchive__archived {
+	width: 33.5%;
+}
+
+/*_________ archive list ______________*/
+
+.unarchive {
+	width: 11%;
+}
+
+.listTask,
+.listIdea,
+.listThought {
+	text-align: right;
+	min-height: 90px;
+	background: #F1F3F4;
+}
+
+p {
+	margin-right: 10px;
+	cursor: pointer;
+}
